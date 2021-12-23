@@ -38,11 +38,11 @@ class AccessTokenGenerate extends Command
      */
     public function handle()
     {
-        $token = Str::random(32);
+        $token = AccessToken::generate();
 
         $this->writeNewEnvironmentFileWith($token);
 
-        $this->output->success('Access token saved to .env file. You can access your site by visiting url below:');
+        $this->output->success('Access token saved to .env file. You can now access your site by visiting url below:');
 
         $this->info(route('homepage', [
             'token' => $token

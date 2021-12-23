@@ -16,9 +16,9 @@ class CheckAccessToken
      */
     public function handle($request, Closure $next)
     {
-        if ($request->cookie('access-token') != ($token = config('access.token'))) {
-            if($request->token == $token){
-                $cookie = cookie('access-token', $token, config('access.expiration'));
+        if (!AccessToken::check($request->cookie('access-token'))) {
+            if(AccessToken::check($request->token)){
+                $cookie = AccessToken::createCookie();
 
                 return redirect()->route('homepage')->cookie($cookie);
             }

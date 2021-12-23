@@ -1,10 +1,11 @@
 {
     "name": "damianchojnacki/access-token",
-    "description": "Laravel package for protecting app by simple access token in url.",
+    "description": "Site access token for Laravel apps.",
     "type": "library",
     "version": "1.0.1",
     "require": {
-        "laravel/framework": "^5.8"
+        "php": ">=7.4",
+        "laravel/framework": ">=5.8"
     },
     "license": "MIT",
     "autoload": {
