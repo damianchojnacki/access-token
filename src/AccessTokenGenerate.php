@@ -44,9 +44,7 @@ class AccessTokenGenerate extends Command
 
         $this->output->success('Access token saved to .env file. You can now access your site by visiting url below:');
 
-        $this->info(route('homepage', [
-            'token' => $token
-        ], true));
+        $this->info(config("app.url") . "?token=$token");
     }
 
     /**

@@ -2,7 +2,7 @@
     "name": "damianchojnacki/access-token",
     "description": "Site access token for Laravel apps.",
     "type": "library",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "require": {
         "php": ">=7.4",
         "laravel/framework": ">=5.8"
