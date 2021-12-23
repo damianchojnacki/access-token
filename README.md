@@ -1,5 +1,7 @@
 # Site access token for Laravel apps
 
+[![Latest Stable Version](http://poser.pugx.org/damianchojnacki/access-token/v)](https://packagist.org/packages/damianchojnacki/access-token) [![Total Downloads](http://poser.pugx.org/damianchojnacki/access-token/downloads)](https://packagist.org/packages/damianchojnacki/access-token) [![License](http://poser.pugx.org/damianchojnacki/access-token/license)](https://packagist.org/packages/damianchojnacki/access-token) [![PHP Version Require](http://poser.pugx.org/damianchojnacki/access-token/require/php)](https://packagist.org/packages/damianchojnacki/access-token)
+
 This package protects site from viewing by regular users. Only the ones who know unique token can access site.
 
 **WARNING! This package DOES NOT ensure high level of protection! It is intended to prevent viewing site by regular users. For real authentication use proper package like Laravel Passport.**
