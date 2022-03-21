@@ -2,5 +2,5 @@
 
 return [
     'token' => env('ACCESS_TOKEN'),
-    'expiration' => env('ACCESS_EXPIRATION', 1440),
+    'expiration' => (int) env('ACCESS_EXPIRATION') ?: 1440,
 ];
