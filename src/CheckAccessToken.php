@@ -20,7 +20,7 @@ class CheckAccessToken
             if(AccessToken::check($request->token)){
                 $cookie = AccessToken::createCookie();
 
-                return redirect('/')->cookie($cookie);
+                return redirect($request->path())->cookie($cookie);
             }
 
             abort(403);
